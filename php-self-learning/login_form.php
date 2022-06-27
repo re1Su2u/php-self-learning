@@ -3,6 +3,8 @@
 
     session_start();
 
+    $sessionid = session_id();
+
     $posted_id = $_POST["id-form"];
     $posted_password = $_POST["pass-form"];
 
@@ -18,7 +20,7 @@
         $result_select_password = $con->query($sql_select_password);
 
         if ($result_select_password->num_rows > 0) {
-            #echo $id;
+            $_SESSION['id'] = $posted_id;
             echo "<script> location.href='top.php';</script>";
         } else {
             echo "<script> location.href='login.php';</script>";
