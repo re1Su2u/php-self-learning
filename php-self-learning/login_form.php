@@ -29,4 +29,13 @@
         echo "<script> location.href='login.php';</script>"; 
     }
 
+    /*
+    TODO: what I want to add
+    Session system ->
+    1. Login and insert user(session ID) and last-login-time
+    2. Update last-login-time every same user change page
+    3. if 5 or some minutes passed from last-login-time,
+       session is expired
+    */
+
 ?>
