@@ -13,8 +13,8 @@
     <h3>Inquiry Page</h3>
 
     <form action="inquiry_form.php" method="POST">
-        Name: <br><input type="text" name="name-form"><br>
-        Email: <br><input type="text" name="email-form"><br>
+        Name (10 characters): <br><input type="text" name="name-form" maxlength="10" required><br>
+        Email: <br><input type="text" name="email-form" maxlength="256"><br>
         Inquiry: <br>
         <textarea name="inquiry-form" cols="50" rows="10"></textarea><br>
 
