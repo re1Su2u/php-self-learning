@@ -11,7 +11,6 @@
 </head>
 <body>
     <h3>Inquiry Page</h3>
-    <?php echo session_id(); ?>
     
 </body>
 </html>

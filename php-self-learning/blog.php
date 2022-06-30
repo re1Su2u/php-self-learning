@@ -11,7 +11,6 @@
 </head>
 <body>
     <h3>Blog Page</h3>
-    <?php echo session_id(); ?>
     
 </body>
 </html>
