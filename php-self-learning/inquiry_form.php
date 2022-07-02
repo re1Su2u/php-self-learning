@@ -9,6 +9,13 @@
     $posted_email = $_POST["email-form"];
     $posted_inquiry = $_POST["inquiry-form"];
 
+    $sql_insert_inquiry_info = "INSERT INTO inquiry VALUE ('$posted_id', '$posted_email', '$posted_inquiry');";
+    $result_insert_sql = $con->query($sql_insert_inquiry_info);
 
-    echo "<script> location.href='inquiry.php' </script>";
+    if ($result_insert_sql) {
+        echo "<script> location.href='top.php' </script>";
+    } else {
+        echo "<script> location.href='inquiry.php' </script>";
+    }
+
 ?>
